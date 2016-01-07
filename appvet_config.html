@@ -19,31 +19,11 @@
 		<br>
 	and move it to your <code>$APPVET_FILES_HOME/conf/tool_adapters/android</code> directory. 
 	<p>
-	Next, edit <code>adhoc-tool.xml</code> by changing the 
-	<code>&lt;appvet:URL&gt;</code> property to reflect the tool server's hostname or IP address. If the Ad-Hoc tool 
-	resides on the same server as AppVet, then set <code>&lt;appvet:URL&gt;</code> to:</p>
+	Next, rename the file with your tool ID which is restricted to lowercase alpha characters
+	only (e.g., if your tool is named "My Tool", rename the file to "mytool.xml"). Then 
 	
-				<p>
-	<pre>
-		<code>
-	&lt;appvet:URL&gt;http://127.0.0.1:8080/android-androwarn-toolservice/Service&lt;/appvet:URL&gt;
-		</code>
-		</pre>
-	</p>
+	edit the XML file to reflect your ad-hoc tool.
 	
-	
-	If, however, the Androwarn service 
-	resides on a different server (e.g., <code>tools.example.com</code>) and uses SSL and port 8443, then set <code>&lt;appvet:URL&gt;</code> to: 
-	
-		<p>
-	<pre>
-		<code>
-	&lt;appvet:URL&gt;https://tools.example.com:8443/android-androwarn-toolservice/Service&lt;/appvet:URL&gt;
-		</code>
-		</pre>
-	</p>
-	
-	Note that the '<code>/android-androwarn-toolservice/Service</code>' portion of the URL should never be modified. 
 	For more information on
 	Tool Adapter Properties, see
 	<a class="underline"
