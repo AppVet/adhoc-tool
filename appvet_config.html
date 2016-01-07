@@ -17,12 +17,14 @@
 			target="_blank">https://github.com/AppVet/adhoc-tool/releases</a>
 	</p>
 		<br>
-	and move it to your <code>$APPVET_FILES_HOME/conf/tool_adapters/android</code> directory. 
+	and move it to your <code>$APPVET_FILES_HOME/conf/tool_adapters/android</code> (or <code>ios</code>) directory. 
 	<p>
-	Next, rename the file with your tool ID which is restricted to lowercase alpha characters
+	Next, rename the file with your tool ID which is restricted to lowercase alphabetic characters
 	only (e.g., if your tool is named "My Tool", rename the file to "mytool.xml"). Then 
 	
-	edit the XML file to reflect your ad-hoc tool.
+	edit the XML file to reflect your ad-hoc tool. Note that <pre><appvet:Category></pre> should always
+	be set to <code>REPORT</code>, <pre><appvet:AppSubmit</pre> should always be set to <code>NONE</code>,
+	and <pre>AuthenticationRequired</pre> should always be set to <code>false</code>. 
 	
 	For more information on
 	Tool Adapter Properties, see
