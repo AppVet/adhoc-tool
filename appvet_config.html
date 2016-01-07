@@ -22,9 +22,11 @@
 	Next, rename the file with your tool ID which is restricted to lowercase alphabetic characters
 	only (e.g., if your tool is named "My Tool", rename the file to "mytool.xml"). Then 
 	
-	edit the XML file to reflect your ad-hoc tool. Note that <pre><appvet:Category></pre> should always
-	be set to <code>REPORT</code>, <pre><appvet:AppSubmit</pre> should always be set to <code>NONE</code>,
-	and <pre>AuthenticationRequired</pre> should always be set to <code>false</code>. 
+	edit the XML file to reflect your ad-hoc tool. Note that <code>&lt;appvet:Category&gt;</code> should always
+	be set to <code>REPORT</code>, <code>&lt;appvet:AppSubmit&gt;</code> should always be set to <code>NONE</code>,
+	and <code>&lt;AuthenticationRequired&gt;</code> should always be set to <code>false</code>. In addition, 
+	<code>&lt;appvet:ReportFile&gt;</code> should always be set to <code>TXT</code>, <code>HTML</code>,
+	<code>PDF</code>, or <code>JSON</code>.
 	
 	For more information on
 	Tool Adapter Properties, see
