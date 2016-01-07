@@ -24,7 +24,7 @@
 	
 	edit the XML file to reflect your ad-hoc tool. Note that <code>&lt;appvet:Category&gt;</code> should always
 	be set to <code>REPORT</code>, <code>&lt;appvet:AppSubmit&gt;</code> should always be set to <code>NONE</code>,
-	and <code>&lt;AuthenticationRequired&gt;</code> should always be set to <code>false</code>. In addition, 
+	and <code>&lt;appvet:AuthenticationRequired&gt;</code> should always be set to <code>false</code>. In addition, 
 	<code>&lt;appvet:ReportFile&gt;</code> should always be set to <code>TXT</code>, <code>HTML</code>,
 	<code>PDF</code>, or <code>JSON</code>.
 	
@@ -38,9 +38,8 @@
 		<h2 id="test">Step 3. Test or Install Tool</h2>
 	
 	<h3>Test</h3>
-<p>If you are connecting to an existing Androwarn service that is accessible to AppVet, you can test the 
-service now by logging into AppVet, uploading an app, and viewing the Androwarn report. If you experience errors 
-connecting to the tool, verify the tool adapter properties or contact the tool's host administrator. 
+<p>To test an ad-hoc tool adapter, simply start AppVet, select an existing app, and upload a report and risk assessment using 
+the AppVet report upload button (right-arrow).
 
 	<h3>Install Tool</h3>
 If you do not yet have access to an existing Androwarn tool, you must 
